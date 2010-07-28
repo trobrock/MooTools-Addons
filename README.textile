@@ -1,1 +1,10 @@
 h1. README
+h2. What this is
+
+This repo is just a collection of small addons that I use regularly in my MooTools projects, things like adding shuffling capability to Arrays to just convenience methods that can make code more readable.
+
+I will try to keep this document up to date with addons that are in this repo and I will keep the source file updated commenting the usage of the addons.
+
+h2. Contributions
+
+If there are any addons that you find yourself using often in your project please fell free to fork this project and contribute what you can.
