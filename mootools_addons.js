@@ -41,7 +41,8 @@
 		 *   Element.isNotVisible();
 		 * Returns:
 		 *   true or false
-		 **/		isNotVisible : function(){
+		 **/
+		isNotVisible : function(){
 			return !this.isVisible();
 		},
 	});
