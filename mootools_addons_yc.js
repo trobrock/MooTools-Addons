@@ -1,0 +1,1 @@
+(function(a){Array.implement({shuffle:function(){for(var c,b,d=this.length;d;c=parseInt(Math.random()*d),b=this[--d],this[d]=this[c],this[c]=b){}return this}});Element.implement({grabs:function(b){if($type(b)=="array"){b.each(function(c){this.grab(c)}.bind(this))}else{this.grab(b)}},isNotVisible:function(){return !this.isVisible()},})})(document.id);
