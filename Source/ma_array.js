@@ -1,3 +1,19 @@
+/*
+---
+description: Some simple addons to the Array class
+
+license: MIT-style
+
+authors:
+- Trae Robrock
+
+requires:
+
+provides: [Array.shuffle]
+
+...
+*/
+
 Array.implement({
 	
 	/**
