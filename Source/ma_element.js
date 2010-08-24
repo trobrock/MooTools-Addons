@@ -17,15 +17,15 @@ provides: [Element.grabs, Element.isNotVisible]
 */
 
 Element.implement({
-	/**
-	 * This is a convienience method for Element.isVisible and makes code readability better
-	 * 
-	 * Usage:
-	 *   Element.isNotVisible();
-	 * Returns:
-	 *   true or false
-	 **/
-	isNotVisible : function(){
-		return !this.isVisible();
-	},
+  /**
+   * This is a convienience method for Element.isVisible and makes code readability better
+   * 
+   * Usage:
+   *   Element.isNotVisible();
+   * Returns:
+   *   true or false
+   **/
+  isNotVisible : function(){
+    return !this.isVisible();
+  },
 });
