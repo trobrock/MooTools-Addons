@@ -1,1 +1,1 @@
-Array.implement({shuffle:function(){for(var b=this.length;b&&--b;){var a=this[b],c=Math.floor(Math.random()*(b+1));this[b]=this[c];this[c]=a}return this}});Element.implement({grabs:function(a){if($type(a)=="array"){a.each(function(b){this.grab(b)}.bind(this))}else{this.grab(a)}},isNotVisible:function(){return !this.isVisible()},});
+Element.implement({isNotVisible:function(){return!this.isVisible()}});Array.implement({shuffle:function(){for(var a=this.length;a&&--a;){var c=this[a],b=Math.floor(Math.random()*(a+1));this[a]=this[b];this[b]=c}return this}});
