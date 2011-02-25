@@ -15,12 +15,12 @@ provides: [Array.shuffle]
 */
 
 Array.implement({
-  
+
   /**
    * This will shuffle an Array randomly
    * Updated this to run faster, thanks to arian (http://github.com/arian) for this
    * It also looks like MooTools Array.Extras v1.3 will have this method, so I will remove this at its release
-   * 
+   *
    * Usage:
    *   Array.shuffle();
    * Returns:
