@@ -15,5 +15,20 @@ describe("Array", function() {
       expect([1,2,3].detect(fn)).toEqual(2);
     });
   });
+
+  describe("select", function() {
+    beforeEach(function() {
+      fn = function(){};
+    });
+
+    it("should return empty array if nothing was matched", function() {
+      expect([1,2,3].select(fn)).toEqual([]);
+    });
+
+    it("should return the values that match", function() {
+      fn = function(i){ return i > 1; };
+      expect([1,2,3].select(fn)).toEqual([2,3]);
+    });
+  });
 });
 
