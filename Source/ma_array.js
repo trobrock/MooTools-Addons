@@ -26,13 +26,11 @@ Array.implement({
   },
 
   select: function(fn, bind) {
-    var results = [];
-    for (var i = 0, l = this.length; i < l; i++){
-      if (i in this) {
-        if (fn.call(bind, this[i], i, this)) { results.push(this[i]); }
-      }
-    }
-    return results;
+    return this.filter(fn, bind);
+  },
+
+  reject: function(fn, bind) {
+    return this.filter(function(i){ return !fn.call(bind, i); });
   }
 
 });

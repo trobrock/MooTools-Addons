@@ -30,5 +30,21 @@ describe("Array", function() {
       expect([1,2,3].select(fn)).toEqual([2,3]);
     });
   });
+
+  describe("reject", function() {
+    beforeEach(function() {
+      fn = function(){};
+    });
+
+    it("should return an empty array if everything was matched", function() {
+      fn = function(i){ return true; };
+      expect([1,2,3].reject(fn)).toEqual([]);
+    });
+
+    it("should return the elements that where not matched", function() {
+      fn = function(i){ return i > 2; };
+      expect([1,2,3].reject(fn)).toEqual([1,2]);
+    });
+  });
 });
 
